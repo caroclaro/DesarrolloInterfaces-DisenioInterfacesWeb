@@ -1,0 +1,166 @@
+.header {
+    width: 100%;
+
+    display: flex;
+    gap: 16px;
+    background-color: #c62828;
+
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.marginLeft {
+    margin-left: auto;
+}
+
+.header #titulo {
+    font-size: 1.8em;
+    padding: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+
+body {
+    font: arial;
+    background-color: #f0f0f0;
+
+    margin: none;
+    padding: none;
+}
+
+.layout {
+
+    padding: 20px;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    text-align: center;
+    /* Para que se centrase todo */
+
+
+}
+
+.layout div {
+    margin: 10px;
+    padding: 15px;
+    background-color: #80cbc4;
+}
+
+/* A la hora de poner el cursor sobre un regalo, es necesario aplicar una animación de 0,3s ease, de tal modo que se aumente la escala y se aumente a 2 el relleno del contendor (recuerda que por defecto es 1). */
+.layout img {
+    flex: 1 1 25%;
+    width: 400px;
+    height: 300px;
+    padding: 1;
+    margin: 0;
+
+
+    transition: padding 0.3s ease, transform 0.3s ease;
+    /* Animación suave para el relleno y la escala */
+
+}
+
+
+.layout img:hover {
+    padding: 2rem;
+    /* Aumento de relleno cuando el cursor está sobre el contenedor */
+    transform: scale(1.1);
+    /* Aumento de la escala (puedes ajustar el valor si es necesario) */
+}
+
+.quienSOy{
+margin: 10px;
+}
+.quienSOy #texto{
+    display: flex;
+    gap: 16px;
+  
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.quienSOy #imagenes{
+    display: flex;
+    gap: 16px;
+  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienSOy #imagenes img{
+    width: 400px;
+    height: 300px;
+
+    display: flex;
+    gap: 16px;
+  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+
+    display: flex;
+    gap: 20px;
+    background-color: #c62828;
+
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+@media (max-width: 1100px) {
+    .layout {
+        padding: 20px;
+
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+
+        text-align: center;
+        /* Para que se centrase todo */
+    }
+}
+
+@media (max-width: 808px) {
+    .layout {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .quienSOy #imagenes {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
