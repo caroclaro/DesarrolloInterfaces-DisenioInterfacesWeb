@@ -1,0 +1,17 @@
+body {margin:3em 10%; background: darkolivegreen;}
+
+img{
+    height: 200px;
+}
+.ball:hover {
+    animation-name: ballmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:both ;
+    animation-direction: alternate;
+}
+
+@keyframes ballmove {
+    100% {transform: translateX(950px) rotate(2turn);}
+}

@@ -1,0 +1,43 @@
+#megacaja {
+    width: 1000px;
+    height: 600px;
+    border: 2px solid black;
+    position: relative;
+    background-color: white;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    /* align-items: flex-start; */
+}
+
+.caja {
+    position: relative;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    font-size: xx-large;
+}
+
+button {
+    width: 300px;
+    height: 30px;
+}
+
+.caja:hover {
+    transition: 4s;
+    height: 12.5%;
+    width: 10%;
+    background-color: blue;
+
+    color: yellow;
+    font-size: larger;
+
+    transform: rotate(270deg);
+}
+
+
+ 
+/* Hhacer js o algo */

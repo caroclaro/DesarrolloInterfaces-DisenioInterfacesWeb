@@ -1,0 +1,22 @@
+body {margin:3em 10%; background: darkolivegreen;}
+
+img{
+    height: 200px;
+}
+.ball:hover {
+    animation-play-state: running;
+}
+
+.ball{
+    animation-name: ballmove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:both ;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+@keyframes ballmove {
+    100% {transform: translateX(950px) rotate(2turn);}
+    /* 50% {transform: translateY(950px) ;} */
+}

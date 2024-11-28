@@ -1,0 +1,22 @@
+.giracion {
+    width: 80px;
+    height: 80px;
+    color: blue;
+}
+
+.giracion {
+    animation-name: giraa;
+    animation-duration: 12s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+
+@keyframes giraa {
+    from {
+        margin-top: 10%;
+        margin-left: 20%;
+        transform: rotate(3turn);
+    }
+}

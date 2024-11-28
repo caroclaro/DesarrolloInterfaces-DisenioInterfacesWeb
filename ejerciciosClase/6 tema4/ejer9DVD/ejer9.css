@@ -1,0 +1,60 @@
+body{
+    background: silver;
+}
+
+#container {
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    background-color: white;
+}
+
+
+#dvd {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-image: url("dvd.gif");
+    background-size: 200px;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    position: absolute;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: Screenshot;
+}
+
+
+@keyframes Screenshot {
+    25% {
+        background-image: url("dvd.gif");
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    50% {
+        background-image: url("dvd.gif");
+        top: 50%;
+        left: calc(100% - 225px);     /* Pa que no se salgo, pero vamos qlo puedes hacer chapuzas */
+        transform: translatey(-50%);
+    }
+    
+    75% {
+        background-image: url("dvd.gif");
+        top: calc(100% - 225px);
+        left: 50%;    
+        transform: translateX(-50%);
+    }
+
+    100% {
+        background-image: url("dvd.gif");
+        top: 50%;
+        left: 0px;
+        transform: translatey(-50%);
+    }
+    
+
+}
