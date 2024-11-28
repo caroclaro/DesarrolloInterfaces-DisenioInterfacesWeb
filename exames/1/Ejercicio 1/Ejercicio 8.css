@@ -1,0 +1,85 @@
+body {
+    border: 5px solid black;
+    padding: 1em;
+    color: rgb(173, 0, 0);
+    font-size: xx-large;
+}
+
+
+#flexcontainer header {
+    width: 80%;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#flexcontainer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    justify-content: center;
+}
+
+#flexcontainer footer {
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#flexcontainer #subcontainer {
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#flexcontainer #subcontainer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+
+main {
+    margin-left: auto; 
+    width: 75%;
+
+
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+    align-items: center;
+  
+}
+
+aside {
+
+    width: 20%;
+    border: 1px solid black;
+    height: 110px;
+}
+
+article {
+    width: 20%;
+    border: 1px solid black;
+    height: 110px;
+}
+
+main div{
+    border: 1px solid red;
+}
+
+main {
+    position: relative;
+    border: 1px solid black;
+}
+
+main div:nth-last-child(1) {
+
+ height: 200%;
+}
