@@ -1,0 +1,36 @@
+.flex-container{
+    max-width: 400px;
+    width: 90%;
+    height: 15rem;
+    list-style-type: none; /* Quita el estilo de la lista */
+    margin: 1.2em auto;  /* Hace que haya un margen de 1.2 entre los dos contenedores y el auto lo centra */
+    padding: 0;
+    background-color: midnightblue;
+
+    /* Propiedades de flexbos generales */
+    display: flex;
+    flex-flow: row wrap-reverse;  /* Esto es lo q hace q se coloque el 5 arriba */
+}
+
+.flex-container:nth-child(1){  /* Afecta solo al primer hijo, de esta clase, el primer contenedor */
+    justify-content: space-around;  /* Les da separación entre ellos */
+    align-content: center
+}
+
+.flex-container:nth-child(2){  /* Afecta solo al primer hijo, de esta clase, el primer contenedor */
+    justify-content: space-between;  /* Les da separación entre ellos */
+    align-content: space-between;
+}
+
+.item{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 1.2em;
+    background-color: steelblue;
+    color: #fff;
+    text-align: center;
+    border: 1px solid white;  /* Esto es lo que hace que se descoloquen, pq en cuanto el pones borde deja de caber en el contenedor, mirar row wrap reverse */
+}
+
+/*  */

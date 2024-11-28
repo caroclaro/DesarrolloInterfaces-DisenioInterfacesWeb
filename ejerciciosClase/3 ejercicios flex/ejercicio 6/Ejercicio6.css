@@ -1,0 +1,81 @@
+/* SOLUCION DE JOSE MARIA  */
+/* el profe usaria flex grow o algo asi */
+
+*{
+    box-sizing: border-box;
+}
+.container {
+    margin:20px auto;
+    width: 80%;
+}
+.container header{
+    background-color: #BBBBBB;
+    display: flex;
+    padding: 1em;
+}
+
+div.container header div {
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 1em;
+    flex-basis: 28%;
+    flex-shrink: 0;
+}
+.container footer{
+    background-color:cadetblue;
+    width: 80%;
+    display: flex;  
+    padding: 2.5vh;
+}
+/* .   */
+.container>* {
+    margin-bottom: 5vh;
+}
+
+.container div {
+    height: 150px;
+    flex-basis: 50%;
+    background-color: #deb887;
+    border: 1px, solid, black;
+}
+
+.container header div{
+    height: 5vh;
+    align-content: center;
+    padding-left: 1vh;
+}
+
+.container header div:nth-child(1){
+    width: 15%;
+    order: 1;
+}
+
+.container header div:nth-child(2){
+    width: 15%;
+    order: 1;
+}
+
+.container header div:nth-child(3){
+    width: 30%;
+}
+
+
+.container header div:nth-child(4){
+    width: 40%;
+}
+
+.container footer div{
+    height: 15vh;
+    transform: translate(0.8vh);
+}
+
+/* .container footer div:nth-child(1),
+.container footer div:nth-child(3){
+    flex-grow: 15;
+} */
+
+.container footer div:nth-child(2){
+    flex-shrink: 2;
+}
+
+/* ._.  .-.   ·-·   ·_·   ·3·       */

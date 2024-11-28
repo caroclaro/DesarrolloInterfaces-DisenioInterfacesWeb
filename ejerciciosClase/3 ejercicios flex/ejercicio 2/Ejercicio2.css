@@ -1,0 +1,35 @@
+/*  */
+
+.test {
+    background-color: aquamarine;
+    margin-bottom: 30px;
+}
+
+ul, li {
+    padding: 0;
+    list-style: none;
+}
+
+.flexcenter{
+    display: flex;
+    flex-direction: column-reverse;  /* Pa que sea columna del revés */
+    justify-content: space-between;
+    align-items: center;
+    height: 31rem;  /* Altura de lo que ocupan los distinto elementos de la li */
+}
+
+div.test ul li {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
+    background-color: orangered;
+    height: 3em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+div.test ul li:nth-child(1){
+    background-color: orange;
+}

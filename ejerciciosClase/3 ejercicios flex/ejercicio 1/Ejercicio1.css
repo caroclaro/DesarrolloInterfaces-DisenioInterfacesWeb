@@ -1,0 +1,43 @@
+:root{
+    --alto: 12.5rem;  /* Creación de una variable  */
+}
+
+div.test {
+    background-color: aquamarine;
+    margin-bottom: 30px;
+}
+
+.flexend1 {
+    display: flex;
+    flex-direction: row;  /* para que salgan en fila */
+    justify-content: space-between;  /* pa que se separen los elementos de la lista */
+    align-items: flex-end;    /* Ajusta la separación entre ellos */
+    height: var(--alto);
+}
+
+.flexend2 {
+    display: flex;
+    flex-direction: row-reverse;  /* Salen en fila y del reves, empezando por el final */
+    justify-content: space-around;  /* pa que se separen los elementos de la lista */
+    align-items: flex-end;
+    height: var(--alto);
+}
+
+ul, li{  /* Pa asegurarse de que los elementos de la lista no tienen ningun adorno */
+    padding: 0;
+    list-style: none;
+}
+
+div.test ul li{
+    display: block;  /* Quita los puntitos de la lista */
+    width: 18%;
+    background-color: orangered;
+    height: 3em;   /* To pa ajustar los tamaños de la caja texto etc */
+    line-height: 3em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+/*  */

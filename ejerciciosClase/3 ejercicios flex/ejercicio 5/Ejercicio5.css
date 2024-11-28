@@ -1,0 +1,66 @@
+/* SOLUCION DE JOSE MARIA  */
+/* el profe usaria flex grow o algo asi */
+
+.container header{
+    background-color: #BBBBBB;
+    width: 80%;
+    display: flex;
+    padding: 1vh;
+}
+
+.container footer{
+    background-color: #5e9ea0;
+    width: 80%;
+    display: flex;
+    padding: 2.5vh;
+}
+
+.container>* {
+    margin-bottom: 5vh;
+}
+
+.container div {
+    background-color: #deb887;
+    border: 1px, solid, black;
+}
+
+.container header div{
+    height: 5vh;
+    align-content: center;
+    padding-left: 1vh;
+}
+
+.container header div:nth-child(1){
+    width: 15%;
+}
+
+.container header div:nth-child(2){
+    width: 15%;
+    order: -1;
+}
+
+.container header div:nth-child(3){
+    width: 30%;
+    order: -1;
+}
+
+
+.container header div:nth-child(4){
+    width: 40%;
+    order: -1;
+}
+
+
+.container footer div{
+    height: 15vh;
+    transform: translate(0.8vh);
+}
+
+.container footer div:nth-child(1),
+.container footer div:nth-child(3){
+    flex-grow: 1;
+}
+
+.container footer div:nth-child(2){
+    flex-grow: 15;
+}
