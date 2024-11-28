@@ -1,0 +1,53 @@
+table.ejercicio{
+    font: .9em Arial, Helvetica, sans-serif;   
+    border: 1px solid #333;   /* Solo al borde exterior de la tabla */
+    border-collapse: collapse;
+    text-align: center;   /*  Centrar texto  */
+}
+
+/* Hay que añadir la imagen fondo gris a la cabecera */
+table.ejercicio tr.cabecera th {
+    background: #f5f5f5 url(imagenes/fondo_gris.gif)  /* El color es para ocupar el cacho que no llega la imagen y asi tener dos colores, lo otro es seleccionar la imagen a traves de su ruta */
+    repeat-x;   /* El repeat x hace que la imagen se repita en el eje x lo que hace que sea infinitamente ancha */
+}
+
+table.ejercicio tr{
+height: 4em;
+vertical-align: bottom;  /* Que el texto esté abajo */
+}
+
+table.ejercicio thead th {
+    text-align: center; /* Pone en el centro el texto de la cabera */
+}
+
+table.ejercicio th.euro { /* Pone la imagen del euro en el margen izq */
+    background: url(imagenes/euro.png) no-repeat left top;   
+}
+
+table.ejercicio th.dolar {
+    background: url(imagenes/dolar.png)  no-repeat left top;
+}
+
+table.ejercicio th.libra {
+    background: url(imagenes/libra.png)  no-repeat left top;
+}
+
+table.ejercicio th.yen {
+    background: url(imagenes/yen.png)  no-repeat left top;
+}
+
+/* El orden importa, si pusieras esto por encima de las imagenes de las monedas, las taparía */
+table.ejercicio th.moneda {  /* Mirar apuntes de la clase moneda en el html */
+        padding: 0 .3em 0 1.2em ;
+        background-color: #E6F3FF;
+}
+
+table.ejercicio th, table.ejercicio td{
+    border: 1px solid #333;
+    line-height: 2em;
+}
+
+tr:nth-of-type(odd){   /* Afecta a las tr que sean del tipo odd, osea a todas las filas impares  */ 
+    background-color: #FFFFCC;
+}
+/*  */ 

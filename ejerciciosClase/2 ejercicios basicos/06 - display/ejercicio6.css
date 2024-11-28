@@ -1,0 +1,43 @@
+*{    /* Aplica a otdos los elementos, todos tienen borde ahora */
+    border: thin solid #442A5D;
+}
+
+.parrafoenlinea{    /* Pues hace que baya todo junto, en linea */
+    display: inline;
+    width: 20%;
+}
+
+#negrita {    /* Hace que negrita esté en un bloque aparte y aparte lo pone negrita */
+    display: block;
+    font-weight: bold;
+}
+
+.parrafoenlista {
+    display: list-item;     /* Los pone modo lista */
+    list-style-type: square;   /* y estio hace que lo que sale antes de cada elemento de la lsita sea un cuadrado */
+    margin-left: 3em;
+}
+
+.nomostrar{
+    display: none;  /* Hace que no se muestre la clase, apartado o lo que sea */
+}
+
+.bloqueenlinea{  /* El hipervinculo es el bloque en linea */
+    display: inline-block;
+    height: 9.5em;
+    width: 9.5em;
+}
+
+.celdadetabla{  /* Hace que un parrafo normal sea unna celda   */
+    display: table-cell;
+    padding-right: 0.3em ;
+    padding-bottom: 0.3em;
+}
+
+.desplazado {  /* Lo desplaza super feo respecto a su posicion, en este caso hacia la inq de la pantall */
+    position: relative;
+    top: 1.3em;
+    right: 1.3em;
+}
+
+/*  */

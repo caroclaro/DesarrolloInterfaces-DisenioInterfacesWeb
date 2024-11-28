@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+#galeria{  /* Hace el cuadrado exterior */
+    max-width: 40.623rem;
+    width: 50%;
+    border:1px solid black;
+    overflow: auto;
+    margin: auto;
+    padding: 0.5em;
+}
+
+#galeria div.caja{ /* Crea la disposicion de las cajas */
+    border: 1px solid black;
+    width: calc(33.33% - 1em);
+    height: 9.375rem;
+    float: left;  /* Apila a la izq un elemento junto otro dependiendo del ancho de la pantalla */
+    margin: 0.5em; /* Margen entre elementos */
+}
+
+div#galeria div+div+div+div{  /* #galeria div.caja:nth-child(n+4) */
+    background-color: green;
+}
+
+#galeria div.caja:nth-last-child(-n+3){  /* Last child para empezar por el final y asi poder colorear los tres ultimosº */
+    background-color:darkblue;
+}
+
+#galeria div.caja:nth-child(4n+2){ /* 4n para multiplos de 4,  y al mas dos para que sean estos, pero sumandoles dos */
+    visibility: hidden;
+}
+
+#galeria div.caja:nth-child(4n){ /* 4n para multiplos de 4,  y al mas dos para que sean estos, pero sumandoles dos */
+    display: none;  /* Hace como si no existieran y el resto de elemntos ocupan su espacio, con el hidden solo esta oculto asi que su espacio sigue reservado para ellos */
+}
+
+/*  */

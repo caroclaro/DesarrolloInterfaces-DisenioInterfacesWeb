@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7 B</title>
+        
+    <style type="text/css">
+
+            body{  /*Hace que la imagen esté siempre en el centro del fondo, subes bajes lapagina da igual*/
+            background: url(madrid.jpg) no-repeat center;
+            background-attachment: fixed;              /* Si quitaras esto se quedaria sipmplemento en el centro pero no se desplazaría contigo */
+            min-height: 2000px;  
+            }  
+
+            /* Sombreado */
+            #contenedor img{
+				box-shadow: 10px 10px 5px black ;  /* Le da la sombra al logo del ies */
+				width: 13.75em;
+				height: 13.97em;
+				overflow:auto;
+			}
+			
+			#contenedor{  /* No es del todo necesario es solo para que la imagen se ajuste al sombreado y quede todo cuadrado */
+				width: 13.75em;
+				height: 13.75em;
+			} 
+		</style>
+	</head>
+<body>
+	<div id="contenedor">
+		<img src="logo.png"></img>
+	</div>	
+</body>
+
+</html>

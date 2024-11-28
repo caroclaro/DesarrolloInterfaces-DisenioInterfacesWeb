@@ -1,0 +1,27 @@
+*{
+    margin: 0 10px;  /* Le aplica a la pagina entera un margen a la izquierda */
+}
+
+div#container h1{ /* Aplica a todos los h1 que esten dentro del div con el id container */
+    border: 2px solid #00F;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div#container h2{ /* Aplica a todos los h2 que esten dentro del div con el id container */
+    border: 2px solid #AAA;
+    padding: 0.5em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+div#container ul{
+     border: 2px solid #0f0
+}
+
+div#container li+li{  /* Es para que se aplique a partir del segundo, de la misma manera puedes hacer que se aplique desde el tercero, cuarto etc */
+    margin-top: 1em;
+}
+
+/*  */

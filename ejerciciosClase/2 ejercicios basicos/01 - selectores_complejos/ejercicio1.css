@@ -1,0 +1,44 @@
+td[colspan="2"], td[rowspan="2"]{
+    background-color: darkgreen;
+}
+
+td[colspan="3"], td[rowspan="3"]{
+    background-color: rgb(103, 129, 103);
+}
+
+td[colspan="4"], td[rowspan="4"]{
+    background-color: rgb(17, 27, 17);
+}
+
+li[id^="pregunta"]{    /* Todos los elementos li que empiecen por pregunta serán los afectados, lo que hace que obligue que empiece por esa palabra es el ^   */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.85em;
+    list-style-type: square;
+    color: #A300CA;
+}
+span.negrita{
+    font-weight: bold;     /*Se aplica a la clase span, que se usa para explicar estilos en mitad de un texto de manera mas facil que partirlo con un div u otras maneras*/
+}
+
+li[id*="pregunta"] span.negrita {   /*Aplica a todos los span negrita, pero que esté dentro de las listas que contengan ""pregunta", para es el asterisco para q contengan en algún lugar*/
+    background-color: #FF9;
+}
+
+.comentarios{  /*Pues nada aplica a la clase comentarios*/
+    font-style: italic ;
+    margin-left: 10%;
+    border: thin dotted #ac8159;
+    margin-right: 10%;
+}
+
+.sin_recuadro + p {     /* Edita la p que se encuentre justo despues de una clase sin_recuadro*/
+    text-decoration: underline;
+}
+
+li[id]>a{          /*Selecciona los elementos (que son hijos directos) donde el elemento padre es un li*/
+    background-color: #ff1212;
+}
+
+span.cursiva{        /**/
+    font-style: italic;
+}

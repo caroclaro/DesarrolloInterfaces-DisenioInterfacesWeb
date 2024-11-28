@@ -1,0 +1,49 @@
+p:first-of-type{   /* Hace que se le aplique estos estilos al primero de todos los p */
+    font-weight: bold;
+    font-style: italic;
+    text-indent: 2em;  /* Esto hace que se tabule algo a la derecha */
+}
+
+#consejo {  /* Nada especial, aplica estos estilos a la clase consejo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: cadetblue;
+    font-weight: bold;
+    color:rgb(48, 48, 41);
+    text-align: justify;
+}
+
+#textolinea{
+    background-color:darkseagreen;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;  /* Pone en mayuscula la primera de cada palabra */
+    font-variant: small-caps;  /* Convierte todas en mayusculas chiquitas */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{  /* Afectaria a todos los h3 AUNQUE tuvieran una clase inherited */
+    color:cornsilk;
+    background-color: darkolivegreen;
+}
+
+.clase {  /* Es una clase que se llama clase, no te rayes */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: lem;
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(115, 156, 142);
+}
+
+#idparaestilo {
+    background-color: darkslategray;
+    letter-spacing: 5px; /* Separacion entre letras */
+    color: antiquewhite;
+    word-spacing: 0.7em; /* Separamiento entre palabras */
+}
+
+table{
+    width: 100%; /* Pa que ocupe un 100 por 100 del espacio que esté ocupando la pagina */
+}
+
+/*  */
+/*  */

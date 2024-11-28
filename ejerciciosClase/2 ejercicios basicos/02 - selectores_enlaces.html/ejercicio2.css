@@ -1,0 +1,40 @@
+#capa1{
+    color:deeppink;
+    background-color:greenyellow;
+    border: thin solid palevioletred
+}
+span.color1, #capa1 a:hover{   /*  Esto hace que este color salga en la clase span Y (por eso está la coma) en la capa 1 todos los a que haya, para que salga al pasarlo por encima se pone el hoover */
+    background-color: hotpink;
+}
+
+#capa2{
+    color:rgb(39, 68, 41);
+    background-color: deeppink;
+    border: thin solid green;
+}
+
+span.color2, #capa2:hover a{   /* lo mismo solo que ahora salen cunado pases el raton por encima de la capa 2*/
+    background-color: rgb(119, 255, 85);
+}
+
+#capa3{
+    color:chartreuse;
+    background-color: rgb(151, 40, 151);
+    border: thin solid blue;
+}
+
+span.color3, #capa3 [id="google"]:hover{    /* Cuando pasas por encima del enlace con id de google, osea su enlace es el unico que tomara color */
+    background-color:aqua;
+}
+
+#capa4{
+    color:palegoldenrod;
+    background-color: green;
+    border: thin solid red;
+}
+
+span.color4, #capa4:hover [id="madrid"]{   /* Cuando pasas por encima del documento del bloque entero se iluminará el enlace de la CM */
+    background-color: brown;
+}
+
+/* El en los dos ultimos no lo hace con id lo hace con #capa4:hover #madrid directamente */
