@@ -1,0 +1,71 @@
+h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#cabecera{
+    width: 200px;
+    border: 1px solid #555;
+}
+
+
+#cabecera:hover {
+    animation-name: cambioTexto;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:both ;
+    animation-direction: alternate;
+}
+
+@keyframes cambioTexto {
+    100% {
+        font-stretch: 5px;
+        font-size: 5px;
+        color: red;
+        box-shadow: 5px 5px 5px grey;
+    }
+}
+
+.cuadrado{
+    width: 600px;
+    height: 600px;
+    animation-name: tmove;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+    animation-fill-mode:both ;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    /* animation-play-state: ;  */
+    animation-delay: 1s;
+    background-image: url("img/queso.png");
+    background-repeat: no-repeat;
+}
+
+.cuadrado:hover {
+    animation-play-state: paused;
+}
+
+@keyframes tmove {
+    100% {
+        transform: translateX(0px) translateY(0) rotate(4turn);
+        background-image: url("img/Captura.PNG") ;
+        scale: 75%;
+    }
+
+    50% {
+         scale: 125%;     /* Solo está duplicado un 50% más para que no sea gigante */
+        background-image: url("img/rojo.png") ;
+    }
+
+    0%{
+        scale: 75%;
+    }
+    
+}
+
+
+
+
+
